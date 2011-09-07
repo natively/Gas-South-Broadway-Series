@@ -2,15 +2,15 @@
   // Colors
     $orange: #e75c01;
     $beige: #fcf4dd;
+    $dkpurple: #53295c;
     $black: #000000;
     $white: #FFFFFF;
 // TYPOGRAPHY
-    $font_header: Tahoma, Sans-Serif;
+    $font_header: Arial, Helvetica, Sans-Serif;
     $font_body: Tahoma, Sans-Serif;
 @mixin fonts($font) {
   h1, h2, h3, h4 {
     font: {
-      face: $font;
       family: $font;
       weight: bold;
     }
@@ -18,13 +18,15 @@
   }
   p, a, ul, ol, li {
     font: {
-      face: $font;
       family: $font;
     }
     line-height: 1.15;
   }
 }
 // Sizes
+  body {
+    font-size: 100%;
+  }
   p {
     font-size: 0.85em;
   }
@@ -35,7 +37,7 @@
     font-size: 1.6em;
   }
   h3 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   h4 {
     font-size: 1em;
@@ -49,10 +51,12 @@
 
 // CONTENT
 body {
-  background-color: $black;
+  background-color: $dkpurple;
 }
 #page {}
 #logo {
+  position: relative;
+  z-index: 1;
   float: left;
   width: 100%;
   background-color: $white;
@@ -60,52 +64,61 @@ body {
 }
 #menu {
   @include fonts($font_header);
-  float: right;
-  position: relative;
-  left: -50%;
+  width: 100%;
+  background-color: $white;
+  float: left;
+//  left: -50%;
   text-align: left;
+  vertical-align: middle;
   ul {
-    position:relative;
-    left: 50%;
-    width: 100%;
+//    position:relative;
+//    left: 50%;
+//    width: 100%;
   }
 //  @include box_shadow(0px, 0px, 10px, lighten($black,20%));  
   li {
     background-color: $orange;
     &:hover {
-      background-color: lighten($orange,10%);
+      background-color: lighten($orange,5%);
     }
     position: relative;
-    margin-right: 3px;
+    margin-right: 2px;
     &.selected {
       font-weight:normal;
       background-color: darken($orange,10%);
-      &:hover {background-color: lighten($orange,10%);}
+      &:hover {background-color: lighten($orange,5%);}
     }
     &.first {
-      margin-left: 7px;
+      margin-left: 0px;
     }
     &.last {
-      margin-right: 7px;
+      width: 125px;
+      margin-right: 0px;
     }    
   }
   a {
+    width: 123px;    
     display: block;
     text-decoration: none;
-    padding: 10px 20px;
     text-align: center;
+    padding: 10px 0px;
     color: $white;
-    font-size: 0.8em;
+    font-size: 0.75em;
     font-weight: bold;
-
   }
 }
 #body_content_title {
   padding-top: 150px;
+  h1 {
+    font: {
+      weight: normal;
+      size: 1.6em;
+    }
+  }
 }
 #body_content {
   @include fonts($font_body);
-  @include box_shadow(0px, 0px, 30px, $white);
+  @include box_shadow(0px, 0px, 5px, $black);
   background: $beige;
   min-height: 600px;
   padding: 20px 20px;
