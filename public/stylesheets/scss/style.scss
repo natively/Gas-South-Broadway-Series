@@ -5,13 +5,13 @@
     $black: #000000;
     $white: #FFFFFF;
 // TYPOGRAPHY
-    $font_header: Tahoma;
-    $font_body: Tahoma;
+    $font_header: Tahoma, Sans-Serif;
+    $font_body: Tahoma, Sans-Serif;
 @mixin fonts($font) {
   h1, h2, h3, h4 {
     font: {
       face: $font;
-      family: Sans-Serif;
+      family: $font;
       weight: bold;
     }
     margin-bottom: 0.25em;
@@ -19,7 +19,7 @@
   p, a, ul, ol, li {
     font: {
       face: $font;
-      family: Sans-Serif;
+      family: $font;
     }
     line-height: 1.15;
   }

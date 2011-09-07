@@ -28,13 +28,13 @@ body {
   left: -50%;
   text-align: left; }
   #menu h1, #menu h2, #menu h3, #menu h4 {
-    font-face: Tahoma;
-    font-family: Sans-Serif;
+    font-face: Tahoma, Sans-Serif;
+    font-family: Tahoma, Sans-Serif;
     font-weight: bold;
     margin-bottom: 0.25em; }
   #menu p, #menu a, #menu ul, #menu ol, #menu li {
-    font-face: Tahoma;
-    font-family: Sans-Serif;
+    font-face: Tahoma, Sans-Serif;
+    font-family: Tahoma, Sans-Serif;
     line-height: 1.15; }
   #menu ul {
     position: relative;
@@ -76,11 +76,11 @@ body {
   min-height: 600px;
   padding: 20px 20px; }
   #body_content h1, #body_content h2, #body_content h3, #body_content h4 {
-    font-face: Tahoma;
-    font-family: Sans-Serif;
+    font-face: Tahoma, Sans-Serif;
+    font-family: Tahoma, Sans-Serif;
     font-weight: bold;
     margin-bottom: 0.25em; }
   #body_content p, #body_content a, #body_content ul, #body_content ol, #body_content li {
-    font-face: Tahoma;
-    font-family: Sans-Serif;
+    font-face: Tahoma, Sans-Serif;
+    font-family: Tahoma, Sans-Serif;
     line-height: 1.15; }
