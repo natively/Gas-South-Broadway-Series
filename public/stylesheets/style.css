@@ -5,13 +5,19 @@ p {
   font-size: 0.85em; }
 
 h1 {
-  font-size: 2em; }
+  font-size: 2em;
+  color: #e75c01;
+  text-shadow: 1px 1px 1px black; }
 
 h2 {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  color: #8603a1;
+  text-shadow: 1px 1px 1px black; }
 
 h3 {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  color: #f5cf00;
+  text-shadow: 0px 0px 0px black; }
 
 h4 {
   font-size: 1em; }
@@ -35,11 +41,11 @@ body {
   vertical-align: middle; }
   #menu h1, #menu h2, #menu h3, #menu h4 {
     font-family: Arial, Helvetica, Sans-Serif;
-    font-weight: bold;
-    margin-bottom: 0.25em; }
+    font-weight: normal;
+    margin-bottom: 0.35em; }
   #menu p, #menu a, #menu ul, #menu ol, #menu li {
     font-family: Arial, Helvetica, Sans-Serif;
-    line-height: 1.15; }
+    line-height: 1.2; }
   #menu li {
     background-color: #e75c01;
     position: relative;
@@ -73,17 +79,17 @@ body {
     font-size: 1.6em; }
 
 #body_content {
-  -moz-box-shadow: 0px 0px 5px black;
-  -webkit-box-shadow: 0px 0px 5px black;
-  -o-box-shadow: 0px 0px 5px black;
-  box-shadow: 0px 0px 5px black;
-  background: #fcf4dd;
+  -moz-box-shadow: 0px 0px 10px black;
+  -webkit-box-shadow: 0px 0px 10px black;
+  -o-box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 10px black;
+  background: #fcfcd0;
   min-height: 600px;
-  padding: 20px 20px; }
+  padding: 30px 30px; }
   #body_content h1, #body_content h2, #body_content h3, #body_content h4 {
-    font-family: Tahoma, Sans-Serif;
-    font-weight: bold;
-    margin-bottom: 0.25em; }
+    font-family: Georgia, Serif;
+    font-weight: normal;
+    margin-bottom: 0.35em; }
   #body_content p, #body_content a, #body_content ul, #body_content ol, #body_content li {
-    font-family: Tahoma, Sans-Serif;
-    line-height: 1.15; }
+    font-family: Georgia, Serif;
+    line-height: 1.2; }

@@ -1,26 +1,31 @@
 // VARIABLES
   // Colors
     $orange: #e75c01;
-    $beige: #fcf4dd;
+    $dkorange: #843000;
+    $beige: #FCFCD0;
+    $purple: #8603a1;
     $dkpurple: #53295c;
+    $yellow: #F5CF00;
+    $dkyellow: #847000;
     $black: #000000;
     $white: #FFFFFF;
 // TYPOGRAPHY
     $font_header: Arial, Helvetica, Sans-Serif;
-    $font_body: Tahoma, Sans-Serif;
-@mixin fonts($font) {
+    $font_body: Georgia, Serif;
+    $font_headings: Tahoma, Helvetica, Sans-Serif;
+@mixin fonts($fontbody,$fontheadings) {
   h1, h2, h3, h4 {
     font: {
-      family: $font;
-      weight: bold;
+      family: $fontheadings;
+      weight: normal;
     }
-    margin-bottom: 0.25em;
+    margin-bottom: 0.35em;
   }
   p, a, ul, ol, li {
     font: {
-      family: $font;
+      family: $fontbody;
     }
-    line-height: 1.15;
+    line-height: 1.2;
   }
 }
 // Sizes
@@ -32,12 +37,18 @@
   }
   h1 {
     font-size: 2em;
+    color: $orange;
+    text-shadow: 1px 1px 1px $black;
   }
   h2 {
     font-size: 1.6em;
+    color: $purple;
+    text-shadow: 1px 1px 1px $black;
   }
   h3 {
     font-size: 1.2em;
+    color: $yellow;
+    text-shadow: 0px 0px 0px $black;
   }
   h4 {
     font-size: 1em;
@@ -63,7 +74,7 @@ body {
   height: 120px;
 }
 #menu {
-  @include fonts($font_header);
+  @include fonts($font_header,$font_header);
   width: 100%;
   background-color: $white;
   float: left;
@@ -117,9 +128,9 @@ body {
   }
 }
 #body_content {
-  @include fonts($font_body);
-  @include box_shadow(0px, 0px, 5px, $black);
+  @include fonts($font_body,$font_body);
+  @include box_shadow(0px, 0px, 10px, $black);
   background: $beige;
   min-height: 600px;
-  padding: 20px 20px;
+  padding: 30px 30px;
 }
