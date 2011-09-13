@@ -1,1 +1,10 @@
-<%= render :partial => "/shared/content_page" %>
+<section id='body_content'>
+  <section id="body_content_left">
+    <div class="inner">
+      <%= raw @page.content_for :body %>
+    </div>
+  </section>
+  <section id="body_content_right">
+  </section>  
+</section>
+<%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>

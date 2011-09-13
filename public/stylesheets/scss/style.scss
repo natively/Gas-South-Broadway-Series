@@ -10,9 +10,11 @@
     $black: #000000;
     $white: #FFFFFF;
 // TYPOGRAPHY
-    $font_header: Arial, Helvetica, Sans-Serif;
+// Font Face shortcuts
+    $font_header: "Helvetica Neue", Arial, Helvetica, sans-serif;
     $font_body: Georgia, Serif;
-    $font_headings: Tahoma, Helvetica, Sans-Serif;
+    $font_headings: "Tahoma", Tahoma, Helvetica, Sans-Serif;
+// Font & Size for each section
 @mixin fonts($fontbody,$fontheadings) {
   h1, h2, h3, h4 {
     font: {
@@ -65,7 +67,6 @@ body {
 #menu {
   @include box_shadow(0px, 0px, 10px, $black);
 }
-#page {}
 #logo {
   position: relative;
   z-index: -1;
@@ -74,7 +75,7 @@ body {
   background-color: $white;
   height: 120px;
 }
-
+//BODY TITLE
 #body_content_title {
   padding-top: 0px;
   h1 {
@@ -84,22 +85,28 @@ body {
     }
   }
 }
+// BODY CONTENT
 #body_content {
   @include fonts($font_body,$font_body);
   @include box_shadow(0px, 0px, 10px, $black);
   background: $beige;
   min-height: 600px;
-  padding: 30px 50px;
+  padding: 2em 2em;
   p {
+    font-size: 0.9em;
     padding: 0.2em 0.2em;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
   }
-  p, ul, li, ol, a {
-    font-size: 0.9em;
+  ul, ol {
+    padding: 0.3em 0.3em;
   }
-  ul {
-    padding: 0.2em 0.2em;
+  li {
+    padding: 0em 0.5em;
+    font-size: 0.9em;
     list-style: disc inside none;
   }
+}
+#footer {
+  
 }
