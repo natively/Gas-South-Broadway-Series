@@ -1,4 +1,5 @@
 sourcedocs
+push_2011*.dat
 
 .bundle
 db/*.sqlite3
