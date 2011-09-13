@@ -10,7 +10,7 @@
     $black: #000000;
     $white: #FFFFFF;
 // TYPOGRAPHY
-// Font Face shortcuts
+// Font shortcuts
     $font_header: "Helvetica Neue", Arial, Helvetica, sans-serif;
     $font_body: Georgia, Serif;
     $font_headings: "Tahoma", Tahoma, Helvetica, Sans-Serif;
@@ -108,5 +108,14 @@ body {
   }
 }
 #footer {
-  
+    color: $white;
+    text-align: center;
+    font-size: 75%;
+    @include fonts($font_header,$font_header);
+    p { 
+      font-size: 0.9em;
+      padding: 0.2em 0.2em;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+    }
 }
