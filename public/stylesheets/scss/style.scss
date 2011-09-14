@@ -75,18 +75,17 @@ body {
   background-color: $white;
   height: 120px;
 }
-//BODY TITLE
-#body_content_title {
-  padding-top: 0px;
-  h1 {
-    font: {
-      weight: normal;
+#body_content {
+  #body_content_title {
+    margin-top: 0em;
+    margin-bottom: 0.4em;
+    h1 {
+      font: {
+        weight: normal;
       size: 1.6em;
+      }
     }
   }
-}
-// BODY CONTENT
-#body_content {
   @include fonts($font_body,$font_body);
   @include box_shadow(0px, 0px, 10px, $black);
   background: $beige;
@@ -108,14 +107,30 @@ body {
   }
 }
 #footer {
-    color: $white;
-    text-align: center;
-    font-size: 75%;
-    @include fonts($font_header,$font_header);
-    p { 
-      font-size: 0.9em;
-      padding: 0.2em 0.2em;
-      margin-top: 0.2em;
-      margin-bottom: 0.2em;
+.logo {
+  position: relative;
+  z-index: -1;
+  float: left;
+  width: 100%;
+  background-color: $white;
+  height: 120px;
+}
+.copyright {
+  position: relative;
+  z-index: -1;
+  float: left;
+  width: 100%;
+  background-color: $white;
+  height: 120px;
+  color: $white;
+  text-align: center;
+  font-size: 75%;
+  @include fonts($font_header,$font_header);
+  p { 
+    font-size: 0.9em;
+    padding: 0.2em 0.2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
     }
+}
 }
