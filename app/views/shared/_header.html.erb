@@ -1,6 +1,12 @@
-<h1 id='logo'>
-  <%= link_to(image_tag("header.png"),'') %>
-<!--  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path %> -->
-</h1>
+<div id='logo'>
+
+  <div class="topimage">
+    <%= image_tag("flourish4.png", :border => 0, :class => "topflourish") %>
+  </div>
+  <div class="headerimage">
+    <%= link_to(image_tag("header.png", :border => 0, :class => "header"),'') %>
+    <!--  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path %> -->
+  </div>
+</div>
 <%= render(:partial => "/shared/menu", :locals => {
   :dom_id => 'menu', :css => 'menu'}) %>

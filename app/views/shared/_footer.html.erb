@@ -1,8 +1,8 @@
 <div id="footer">
-<div class="logo">
-some stuff here
-</div>
-  <div class="copyright">
+  <div class="image">
+    <%= image_tag("flourish3.png", :border => 0, :class => "flourish") %>
+  </div>
+  <div id="copyright">
     <p>
       <%= t('.copyright', :year => Time.now.year,
                           :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>

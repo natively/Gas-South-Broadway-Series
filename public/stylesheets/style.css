@@ -22,7 +22,10 @@ h4 {
 body {
   background-color: #53295c; }
 
-#menu {
+#page_container {
+  margin: 0px auto;
+  width: 1000px;
+  height: 100%;
   -moz-box-shadow: 0px 0px 10px black;
   -webkit-box-shadow: 0px 0px 10px black;
   -o-box-shadow: 0px 0px 10px black;
@@ -30,33 +33,39 @@ body {
 
 #logo {
   position: relative;
-  z-index: -1;
-  float: left;
   width: 100%;
   background-color: white;
   height: 120px; }
+  #logo .topimage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100; }
+    #logo .topimage .topflourish {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 100; }
+  #logo .headerimage {
+    text-align: left; }
 
 #body_content {
-  -moz-box-shadow: 0px 0px 10px black;
-  -webkit-box-shadow: 0px 0px 10px black;
-  -o-box-shadow: 0px 0px 10px black;
-  box-shadow: 0px 0px 10px black;
+  z-index: 0;
   background: #fcfcd0;
   min-height: 600px;
   padding: 2em 2em; }
   #body_content #body_content_title {
     margin-top: 0em;
-    margin-bottom: 0.4em; }
-    #body_content #body_content_title h1 {
-      font-weight: normal;
-      font-size: 1.6em; }
+    margin-bottom: 0.4em;
+    font-weight: normal;
+    font-size: 1.8em; }
   #body_content h1, #body_content h2, #body_content h3, #body_content h4 {
-    font-family: Georgia, Serif;
+    font-family: "Georgia", Georgia, Serif;
     font-weight: normal;
     margin-top: 0.4em;
     margin-bottom: 0.4em; }
   #body_content p, #body_content a, #body_content ul, #body_content ol, #body_content li {
-    font-family: Georgia, Serif;
+    font-family: "Georgia", Georgia, Serif;
     line-height: 1.2; }
   #body_content p {
     font-size: 0.9em;
@@ -70,33 +79,43 @@ body {
     font-size: 0.9em;
     list-style: disc inside none; }
 
-#footer .logo {
-  position: relative;
-  z-index: -1;
-  float: left;
-  width: 100%;
-  background-color: white;
-  height: 120px; }
-#footer .copyright {
-  position: relative;
-  z-index: -1;
-  float: left;
-  width: 100%;
-  background-color: white;
-  height: 120px;
-  color: white;
-  text-align: center;
-  font-size: 75%; }
-  #footer .copyright h1, #footer .copyright h2, #footer .copyright h3, #footer .copyright h4 {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    margin-top: 0.4em;
-    margin-bottom: 0.4em; }
-  #footer .copyright p, #footer .copyright a, #footer .copyright ul, #footer .copyright ol, #footer .copyright li {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    line-height: 1.2; }
-  #footer .copyright p {
-    font-size: 0.9em;
-    padding: 0.2em 0.2em;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em; }
+#footer {
+  height: 100%;
+  z-index: -1000;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; }
+  #footer .image {
+    z-index: 999;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: relative;
+    text-align: right;
+    width: 1000px;
+    max-height: 80px;
+    background-color: #fcfcd0; }
+    #footer .image .flourish {
+      bottom: 0px;
+      position: relative; }
+  #footer #copyright {
+    position: relative;
+    bottom: 0px;
+    width: 1000px;
+    padding: 5px 0px;
+    background-color: #e75c01;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 75%; }
+    #footer #copyright h1, #footer #copyright h2, #footer #copyright h3, #footer #copyright h4 {
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      margin-top: 0.4em;
+      margin-bottom: 0.4em; }
+    #footer #copyright p, #footer #copyright a, #footer #copyright ul, #footer #copyright ol, #footer #copyright li {
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+      line-height: 1.2; }
+    #footer #copyright p {
+      font-size: 1em;
+      padding: 0.2em 0.2em;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em; }

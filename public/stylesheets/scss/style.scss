@@ -12,7 +12,7 @@
 // TYPOGRAPHY
 // Font shortcuts
     $font_header: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    $font_body: Georgia, Serif;
+    $font_body: "Georgia", Georgia, Serif;
     $font_headings: "Tahoma", Tahoma, Helvetica, Sans-Serif;
 // Font & Size for each section
 @mixin fonts($fontbody,$fontheadings) {
@@ -64,30 +64,51 @@
 body {
   background-color: $dkpurple;
 }
-#menu {
-  @include box_shadow(0px, 0px, 10px, $black);
+#page_container {
+  margin: 0px auto;
+  width: 1000px;
+  height: 100%;
+  @include box_shadow(0px, 0px, 10px, $black);  
 }
 #logo {
   position: relative;
-  z-index: -1;
-  float: left;
   width: 100%;
   background-color: $white;
   height: 120px;
+  .topimage {
+      position: absolute;
+      top: -0px;
+      left: 0px;
+      z-index: 100;
+    .topflourish {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 100;
+    }
+  }
+  .headerimage {
+    text-align: left;
+    .header {
+      //
+    }
+  }
+}
+#menu {
+  //@include box_shadow(0px, 0px, 10px, $black);
 }
 #body_content {
   #body_content_title {
     margin-top: 0em;
     margin-bottom: 0.4em;
-    h1 {
-      font: {
-        weight: normal;
-      size: 1.6em;
-      }
+    font: {
+      weight: normal;
+      size: 1.8em;
     }
   }
   @include fonts($font_body,$font_body);
-  @include box_shadow(0px, 0px, 10px, $black);
+  //@include box_shadow(0px, 0px, 10px, $black);
+  z-index: 0;
   background: $beige;
   min-height: 600px;
   padding: 2em 2em;
@@ -107,30 +128,44 @@ body {
   }
 }
 #footer {
-.logo {
-  position: relative;
-  z-index: -1;
-  float: left;
-  width: 100%;
-  background-color: $white;
-  height: 120px;
-}
-.copyright {
-  position: relative;
-  z-index: -1;
-  float: left;
-  width: 100%;
-  background-color: $white;
-  height: 120px;
-  color: $white;
-  text-align: center;
-  font-size: 75%;
-  @include fonts($font_header,$font_header);
-  p { 
-    font-size: 0.9em;
-    padding: 0.2em 0.2em;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
+  //@include box_shadow(0px, 0px, 10px, $black);
+  height: 100%;
+  z-index: -1000;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  .image {
+    z-index:999;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: relative;
+    text-align: right;
+    //float: right;
+    width: 1000px;
+    max-height: 80px;
+    background-color: $beige;
+    //background: url('../images/flourish3.png') no-repeat;
+    .flourish {
+      bottom: 0px;
+      position: relative;
     }
-}
+  }
+  #copyright {
+    position: relative;
+    bottom: 0px;
+    //float: left;
+    width: 1000px;
+    padding: 5px 0px;
+    background-color: $orange;
+    height: 100%;
+    color: $white;
+    text-align: center;
+    font-size: 75%;
+    @include fonts($font_header,$font_header);
+    p { 
+      font-size: 1em;
+      padding: 0.2em 0.2em;
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+      }
+  }
 }
