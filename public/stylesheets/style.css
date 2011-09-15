@@ -23,6 +23,7 @@ body {
   background-color: #53295c; }
 
 #page_container {
+  background-color: white;
   margin: 0px auto;
   width: 1000px;
   height: 100%;
@@ -30,6 +31,13 @@ body {
   -webkit-box-shadow: 0px 0px 10px black;
   -o-box-shadow: 0px 0px 10px black;
   box-shadow: 0px 0px 10px black; }
+
+#body_content {
+  position: relative; }
+
+#body_content_right {
+  float: right;
+  width: 300px; }
 
 #likebutton {
   position: absolute;
@@ -39,7 +47,6 @@ body {
 #logo {
   position: relative;
   width: 100%;
-  background-color: white;
   height: 120px; }
   #logo .topimage {
     position: absolute;
@@ -56,8 +63,7 @@ body {
 
 #body_content {
   z-index: 0;
-  background: #fcfcd0;
-  min-height: 600px;
+  min-height: 400px;
   padding: 2em 2em; }
   #body_content #body_content_title {
     margin-top: 0em;
@@ -96,18 +102,18 @@ body {
     position: relative;
     text-align: right;
     width: 1000px;
-    max-height: 80px;
-    background-color: #fcfcd0; }
+    max-height: 80px; }
     #footer .image .flourish {
       bottom: 0px;
       position: relative; }
+    #footer .image .cepac {
+      position: absolute;
+      left: 15px;
+      bottom: 10px; }
   #footer #copyright {
     position: relative;
-    bottom: 0px;
-    width: 1000px;
-    padding: 5px 0px;
+    padding: 0.75em 0em;
     background-color: #e75c01;
-    height: 100%;
     color: white;
     text-align: center;
     font-size: 75%; }
@@ -120,7 +126,4 @@ body {
       font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
       line-height: 1.2; }
     #footer #copyright p {
-      font-size: 1em;
-      padding: 0.2em 0.2em;
-      margin-top: 0.2em;
-      margin-bottom: 0.2em; }
+      font-size: 1em; }

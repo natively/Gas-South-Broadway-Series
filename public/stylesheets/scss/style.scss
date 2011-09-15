@@ -65,10 +65,23 @@ body {
   background-color: $dkpurple;
 }
 #page_container {
+  background-color: $white;
   margin: 0px auto;
   width: 1000px;
   height: 100%;
   @include box_shadow(0px, 0px, 10px, $black);  
+}
+#body_content {
+  position: relative;
+}
+#body_content_left {
+  //width: 100%;
+}
+#body_content_right {
+  //position: absolute;
+  float: right;
+  //top: 0px;
+  width: 300px;
 }
 #likebutton {
   position:absolute;
@@ -78,7 +91,6 @@ body {
 #logo {
   position: relative;
   width: 100%;
-  background-color: $white;
   height: 120px;
   .topimage {
       position: absolute;
@@ -95,7 +107,6 @@ body {
   .headerimage {
     text-align: left;
     .header {
-      //
     }
   }
 }
@@ -112,10 +123,8 @@ body {
     }
   }
   @include fonts($font_body,$font_body);
-  //@include box_shadow(0px, 0px, 10px, $black);
   z-index: 0;
-  background: $beige;
-  min-height: 600px;
+  min-height: 400px;
   padding: 2em 2em;
   p {
     font-size: 0.9em;
@@ -133,7 +142,6 @@ body {
   }
 }
 #footer {
-  //@include box_shadow(0px, 0px, 10px, $black);
   height: 100%;
   z-index: -1000;
   margin: 0 0 0 0;
@@ -147,30 +155,28 @@ body {
     //float: right;
     width: 1000px;
     max-height: 80px;
-    background-color: $beige;
+    //background-color: $white;
     //background: url('../images/flourish3.png') no-repeat;
     .flourish {
       bottom: 0px;
       position: relative;
     }
+    .cepac {
+      position: absolute;
+      left: 15px;
+      bottom: 10px;
+    }
   }
   #copyright {
     position: relative;
-    bottom: 0px;
-    //float: left;
-    width: 1000px;
-    padding: 5px 0px;
+    padding: 0.75em 0em;
     background-color: $orange;
-    height: 100%;
     color: $white;
     text-align: center;
     font-size: 75%;
     @include fonts($font_header,$font_header);
     p { 
       font-size: 1em;
-      padding: 0.2em 0.2em;
-      margin-top: 0.2em;
-      margin-bottom: 0.2em;
       }
   }
 }
