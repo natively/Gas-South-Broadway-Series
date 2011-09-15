@@ -8,12 +8,12 @@ h1 {
 
 h2 {
   font-size: 1.6em;
-  color: #8603a1;
+  color: #f5cf00;
   text-shadow: 1px 1px 1px gray; }
 
 h3 {
   font-size: 1.2em;
-  color: #f5cf00;
+  color: #8603a1;
   text-shadow: 1px 1px 1px gray; }
 
 h4 {
@@ -69,7 +69,7 @@ body {
     margin-top: 0em;
     margin-bottom: 0.4em;
     font-weight: normal;
-    font-size: 1.8em; }
+    font-size: 2em; }
   #body_content h1, #body_content h2, #body_content h3, #body_content h4 {
     font-family: "Georgia", Georgia, Serif;
     font-weight: normal;
@@ -78,6 +78,12 @@ body {
   #body_content p, #body_content a, #body_content ul, #body_content ol, #body_content li {
     font-family: "Georgia", Georgia, Serif;
     line-height: 1.2; }
+  #body_content a {
+    color: #5c026f;
+    text-decoration: underline; }
+    #body_content a:hover, #body_content a:active, #body_content a:focus {
+      color: #b004d3;
+      text-decoration: underline; }
   #body_content p {
     font-size: 0.9em;
     padding: 0.2em 0.2em;

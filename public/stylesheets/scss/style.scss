@@ -42,12 +42,12 @@
   }
   h2 {
     font-size: 1.6em;
-    color: $purple;
+    color: $yellow;
     text-shadow: 1px 1px 1px lighten($black,50%);
   }
   h3 {
     font-size: 1.2em;
-    color: $yellow;
+    color: $purple;
     text-shadow: 1px 1px 1px lighten($black,50%);
   }
   h4 {
@@ -119,10 +119,18 @@ body {
     margin-bottom: 0.4em;
     font: {
       weight: normal;
-      size: 1.8em;
+      size: 2em;
     }
   }
   @include fonts($font_body,$font_body);
+  a{
+    color: darken($purple,10%);
+    text-decoration: underline;
+    &:hover, &:active, &:focus {
+      color: lighten($purple,10%);
+      text-decoration: underline;
+    }
+  }
   z-index: 0;
   min-height: 400px;
   padding: 2em 2em;
