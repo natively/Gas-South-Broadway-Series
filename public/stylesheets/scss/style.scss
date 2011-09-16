@@ -77,9 +77,6 @@ body {
 #body_content_left {
   //width: 100%;
   table {
-    margin: 0 auto;
-    padding: 1em;
-    text-align: center;
   }
 }
 #body_content_right {
@@ -165,11 +162,8 @@ body {
     padding: 0 0 0 0;
     position: relative;
     text-align: right;
-    //float: right;
     width: 1000px;
     max-height: 80px;
-    //background-color: $white;
-    //background: url('../images/flourish3.png') no-repeat;
     .flourish {
       bottom: 0px;
       position: relative;
