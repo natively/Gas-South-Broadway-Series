@@ -71,7 +71,7 @@ body {
 #body_content {
   z-index: 0;
   min-height: 400px;
-  padding: 2em 2em; }
+  padding: 2em 3em; }
   #body_content #body_content_title {
     margin-top: 0em;
     margin-bottom: 0.4em;
@@ -92,15 +92,16 @@ body {
       color: #b004d3;
       text-decoration: underline; }
   #body_content p {
-    font-size: 0.9em;
-    padding: 0.2em 0.2em;
-    margin-top: 0.2em;
-    margin-bottom: 0.2em; }
+    line-height: 1.5;
+    font-size: 0.95em;
+    padding: 0.2em 0.4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em; }
   #body_content ul, #body_content ol {
     padding: 0.3em 0.3em; }
   #body_content li {
     padding: 0em 0.5em;
-    font-size: 0.9em;
+    font-size: 0.95em;
     list-style: disc inside none; }
 
 #footer {
@@ -108,7 +109,7 @@ body {
   z-index: -1000;
   margin: 0 0 0 0;
   padding: 0 0 0 0; }
-  #footer .image {
+  #footer .images {
     z-index: 999;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
@@ -116,13 +117,20 @@ body {
     text-align: right;
     width: 1000px;
     max-height: 80px; }
-    #footer .image .flourish {
+    #footer .images .flourish {
       bottom: 0px;
       position: relative; }
-    #footer .image .cepac {
+    #footer .images .cepac {
       position: absolute;
       left: 15px;
       bottom: 10px; }
+    #footer .images .social {
+      position: relative;
+      margin-right: 173px;
+      width: 100%;
+      text-align: center; }
+      #footer .images .social img {
+        margin: 15px 6px; }
   #footer #copyright {
     position: relative;
     padding: 0.75em 0em;
