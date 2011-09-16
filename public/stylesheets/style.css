@@ -36,9 +36,12 @@ body {
   position: relative; }
 
 #body_content_left table {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1em;
   text-align: center; }
+  #body_content_left table td {
+    padding: 1em; }
 
 #body_content_right {
   float: right;

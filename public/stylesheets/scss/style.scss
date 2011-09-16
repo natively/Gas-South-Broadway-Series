@@ -77,9 +77,13 @@ body {
 #body_content_left {
   //width: 100%;
   table {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1em;
     text-align: center;
+    td {
+      padding: 1em;
+    }
   }
 }
 #body_content_right {
