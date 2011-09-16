@@ -76,6 +76,11 @@ body {
 }
 #body_content_left {
   //width: 100%;
+  table {
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+  }
 }
 #body_content_right {
   //position: absolute;
