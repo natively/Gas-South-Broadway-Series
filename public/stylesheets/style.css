@@ -35,6 +35,11 @@ body {
 #body_content {
   position: relative; }
 
+#body_content_left table {
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center; }
+
 #body_content_right {
   float: right;
   width: 300px; }
