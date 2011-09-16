@@ -35,16 +35,18 @@ body {
 #body_content {
   position: relative; }
 
-#body_content_left table {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
-#body_content_left td {
-  text-align: center; }
+#body_content_left {
+  width: 100%; }
+  #body_content_left table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  #body_content_left td {
+    text-align: center; }
 
 #body_content_right {
   float: right;
-  width: 400px; }
+  width: 300px; }
 
 #likebutton {
   position: absolute;
