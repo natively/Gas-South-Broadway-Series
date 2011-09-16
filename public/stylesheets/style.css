@@ -38,10 +38,10 @@ body {
 #body_content_left table {
   margin-left: auto;
   margin-right: auto;
-  padding: 1em;
   text-align: center; }
-  #body_content_left table td {
-    padding: 1em; }
+#body_content_left td {
+  width: 100%;
+  text-align: center; }
 
 #body_content_right {
   float: right;
