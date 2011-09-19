@@ -94,8 +94,12 @@ body {
 }
 #likebutton {
   position:absolute;
+  width: 150px;
   right:15px;
   top:15px;
+  iframe {
+    width: 150px !important;
+  }
 }
 #logo {
   position: relative;

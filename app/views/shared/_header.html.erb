@@ -3,17 +3,16 @@
     <%= image_tag("flourish4.png", :border => 0, :class => "topflourish") %>
   </div>
   <span id="likebutton">
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#appId=156508691104965&xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=275477222470186&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-    <div class="fb-like" data-href="https://www.facebook.com/GasSouthBroadwaySeries" data-send="true" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial">
-    </div>
+<div class="fb-like" data-href="https://www.facebook.com/GasSouthBroadwaySeries" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
   </span>
   <div class="headerimage">
     <%= link_to(image_tag("header.png", :border => 0, :class => "header"),'') %>
