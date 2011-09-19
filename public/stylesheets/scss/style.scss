@@ -62,7 +62,11 @@
 
 // CONTENT
 body {
+  background-image: url('../images/bg.png');
   background-color: $dkpurple;
+  background-repeat:repeat-y;
+  background-attachment:fixed;
+  background-position:center; 
 }
 #page_container {
   background-color: $white;

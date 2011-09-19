@@ -20,7 +20,11 @@ h4 {
   font-size: 1em; }
 
 body {
-  background-color: #53295c; }
+  background-image: url("../images/bg.png");
+  background-color: #53295c;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: center; }
 
 #page_container {
   background-color: white;
