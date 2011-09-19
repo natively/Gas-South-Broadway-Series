@@ -40,7 +40,7 @@ body {
   position: relative; }
 
 #body_content_left {
-  width: 600px; }
+  width: 550px; }
   #body_content_left table {
     margin-left: auto;
     margin-right: auto;
@@ -50,7 +50,7 @@ body {
 
 #body_content_right {
   float: right;
-  width: 300px; }
+  width: 350px; }
 
 #likebutton {
   position: absolute;
