@@ -60,6 +60,13 @@ body {
   #likebutton iframe {
     width: 150px !important; }
 
+#search {
+  position: absolute;
+  text-align: right;
+  width: 150px;
+  right: 15px;
+  top: 55px; }
+
 #logo {
   position: relative;
   width: 100%;
