@@ -23,4 +23,18 @@
   <%= javascript_include_tag 'sfinit' %>
   <%= javascript_include_tag 'supersubs' %>
   <%= javascript_include_tag 'hoverIntent' %>
+
+<% if @page.images.present? %>
+  <style type="text/css">
+  <% @page.images.each do |i| %>
+    body{
+      background-image: url(<%= i.url %>) !important;
+      background-color: #53295c;
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      background-position:center; 
+    }
+   <% end %> 
+   </style> 
+<% end %>
 </head>

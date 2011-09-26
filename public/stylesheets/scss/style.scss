@@ -69,7 +69,11 @@ body {
   background-position:center; 
 }
 #page_container {
+  //background-image: url('../images/bgfadesides.png');
   background-color: $white;
+  //background-repeat:repeat-y;
+  //background-attachment:fixed;
+  //background-position:center; 
   margin: 0px auto;
   width: 1000px;
   height: 100%;
