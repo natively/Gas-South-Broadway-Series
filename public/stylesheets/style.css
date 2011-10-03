@@ -1,6 +1,12 @@
 body {
   font-size: 100%; }
 
+strong {
+  font-weight: bold !important; }
+
+em {
+  font-style: italic !important; }
+
 h1 {
   font-size: 2em;
   color: #e75c01;
