@@ -87,6 +87,11 @@ body {
     left: 250px;
     top: 10px; }
 
+#socialtop {
+  position: absolute;
+  top: 45px;
+  right: 20px; }
+
 #body_content {
   z-index: 0;
   min-height: 400px;

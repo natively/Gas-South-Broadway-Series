@@ -5,6 +5,10 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'thin'
+
+gem 'rack', '1.2.3'
+
 group :production do
   gem 'pg'
 end
